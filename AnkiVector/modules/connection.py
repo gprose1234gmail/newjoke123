@@ -81,7 +81,7 @@ def connection_chat(update, context):
         chat_name = update.effective_message.chat.title
 
     if conn:
-        message = "You are currently connected to {}.\n".format(chat_name)
+        message = "You are currently connected to {} ═「 @Missharelyluna_bot 」.\n".format(chat_name)
     else:
         message = "You are currently not connected in any group.\n"
     send_message(update.effective_message, message, parse_mode="markdown")
@@ -132,7 +132,7 @@ def connect_chat(update, context):
                     chat_name = conn_chat.title
                     send_message(
                         update.effective_message,
-                        "Successfully connected to *{}*. \nUse /helpconnect to check available commands.".format(
+                        "Successfully connected to *{}* ═「 @Missharelyluna_bot 」. \nUse /helpconnect to check available commands.".format(
                             chat_name
                         ),
                         parse_mode=ParseMode.MARKDOWN,
@@ -231,7 +231,7 @@ def connect_chat(update, context):
                     sql.add_history_conn(user.id, str(chat.id), chat_name)
                     context.bot.send_message(
                         update.effective_message.from_user.id,
-                        "You are connected to *{}*. \nUse `/helpconnect` to check available commands.".format(
+                        "You are connected to *{}* ═「 @Missharelyluna_bot 」. \nUse `/helpconnect` to check available commands.".format(
                             chat_name
                         ),
                         parse_mode="markdown",
@@ -324,7 +324,7 @@ def help_connect_chat(update, context):
     context.args
 
     if update.effective_message.chat.type != "private":
-        send_message(update.effective_message, "PM me with that command to get help.")
+        send_message(update.effective_message, "PM me with that command to get help at ═「 @Missharelyluna_bot 」. ")
         return
     else:
         send_message(update.effective_message, CONN_HELP, parse_mode="markdown")
@@ -358,7 +358,7 @@ def connect_button(update, context):
                 )
                 chat_name = conn_chat.title
                 query.message.edit_text(
-                    "Successfully connected to *{}*. \nUse `/helpconnect` to check available commands.".format(
+                    "Successfully connected to *{}* ═「 @Missharelyluna_bot 」. \nUse `/helpconnect` to check available commands.".format(
                         chat_name
                     ),
                     parse_mode=ParseMode.MARKDOWN,
