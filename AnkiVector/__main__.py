@@ -64,40 +64,45 @@ from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = f"""
-*Hellow There, I'm Anki Vector 🍑
-
-I'm a Powerfull group manager bot With Cool Modules. Made My @TeamAnkiVector
+*HelloW There, I'm LUNA
+I'm a Powerfull group manager bot With Cool Modules. Made My @MISSHARELYLUNA
 hit /help to Find my list of available commands 🕹*
 """
 
 buttons = [
-    [
-        InlineKeyboardButton(text="📌Updates Channel", url="https://t.me/ankivectorUpdates"),
-        InlineKeyboardButton(text="🖲 Support Group", url="https://t.me/AnkiSupport_Official"),
+      [
+        InlineKeyboardButton(
+            text="fed join ", url="https://t.me/tamilchating_fed"
+        ),
     ],
     [
-        InlineKeyboardButton(text="📜 Source Code", url="https://www.youtube.com/watch?v=fXXEcAkWAFU"),
+        InlineKeyboardButton(text="📌Updates Channel", url="https://t.me/luna_officials"),
+        InlineKeyboardButton(text="🖲 Support Group", url="https://t.me/lunasupportz"),
+    ],
+    [
+        InlineKeyboardButton(text="📜 network ", url="https://t.me/MISSHARELYLUNA"),
         InlineKeyboardButton(text="❔ Help", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Anki Vector To Youre Group ➕", url="t.me/TheAnkiVectorbot?startgroup=true"
+            text="➕ Add luna To Your Group ➕", url="https://t.me/Missharelyluna_bot?startgroup=true"
         ),
     ],
 ]
 
 
-ANKIVECTOR_STICKER = "CAACAgUAAxkBAAEEwKthkPVBp6d5T4S3dlYZM3L8BkXRNAACOAQAAryviVQbCLI09PvjAAEiBA"
+ANKIVECTOR_STICKER = ""
 
 HELP_STRINGS = f"""
-*Main Commands :* 🤖
-
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
-✪ /settings: 
-   ✪ in PM: will send you your settings for all supported modules.
-   ✪ in a Group: will redirect you to pm, with all that chat's settings.
+*Main Commands :* 🤖https://telegra.ph/file/1a037c8c3eca8ddcd9dfe.jpg
+Main Commands :🤖
+╔ /start: Starts me! You've probably already used this.
+╠ /help: Click this, I'll let you know about myself!
+╠ /donate: You can support my creater using this command.
+╠ /settings : 
+╚══║in PM: will send you your settings for all supported modules.
+   ╚ in a Group: will redirect you to pm, with all that chat's settings.
+   Powered by : @lunagban
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -106,7 +111,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Damantha Jasinghe](t.me/Damantha_Jasinghe)"""
+Support them  [ALAN WALKER ](t.me/alpha_romeo_06)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -391,7 +396,7 @@ def AnkiVector_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Anki Vectr Support](https://t.me/AnkiSupport_Official).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [LUNA OFFICIAL](https://t.me/luna_officials).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
